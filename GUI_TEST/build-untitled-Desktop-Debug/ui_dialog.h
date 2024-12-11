@@ -22,7 +22,8 @@ class Ui_Dialog
 public:
     QLabel *label;
     QLabel *label_2;
-    QPushButton *pushButton;
+    QPushButton *startButton;
+    QPushButton *stopButton;
 
     void setupUi(QDialog *Dialog)
     {
@@ -35,9 +36,12 @@ public:
         label_2 = new QLabel(Dialog);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(40, 60, 57, 14));
-        pushButton = new QPushButton(Dialog);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(100, 100, 80, 22));
+        startButton = new QPushButton(Dialog);
+        startButton->setObjectName(QString::fromUtf8("startButton"));
+        startButton->setGeometry(QRect(40, 100, 80, 22));
+        stopButton = new QPushButton(Dialog);
+        stopButton->setObjectName(QString::fromUtf8("stopButton"));
+        stopButton->setGeometry(QRect(160, 100, 80, 22));
 
         retranslateUi(Dialog);
 
@@ -49,7 +53,8 @@ public:
         Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("Dialog", "TextLabel", nullptr));
         label_2->setText(QCoreApplication::translate("Dialog", "Brzina", nullptr));
-        pushButton->setText(QCoreApplication::translate("Dialog", "start", nullptr));
+        startButton->setText(QCoreApplication::translate("Dialog", "start", nullptr));
+        stopButton->setText(QCoreApplication::translate("Dialog", "stop", nullptr));
     } // retranslateUi
 
 };
