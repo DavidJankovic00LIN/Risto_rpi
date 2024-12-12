@@ -4,8 +4,8 @@
 #define trigPin 26   // Pin za trig signal
 #define echoPin 27   // Pin za echo signal
 
-int granica;
-int dimenzija;
+int granica=5;
+int dimenzija=1;
 float distanca;
 float interval;
 float brzina;
